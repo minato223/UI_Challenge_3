@@ -126,6 +126,7 @@ background: linear-gradient(28deg, rgba(99,107,224,1) 0%, rgba(0,188,255,1) 100%
 }
 .content-wrapper .left {
   align-items: flex-start;
+  justify-content: center;
 }
 .action-button{
     border: none;
@@ -137,9 +138,6 @@ background: linear-gradient(28deg, rgba(99,107,224,1) 0%, rgba(0,188,255,1) 100%
     letter-spacing: .01rem;
     box-shadow: 2px 3px 3px -2px #0000006b;
   }
-.button-container{
-  flex-grow: 1;
-}
   .big-title, .content {
   color: white;
 }
@@ -183,7 +181,7 @@ background: linear-gradient(28deg, rgba(99,107,224,1) 0%, rgba(0,188,255,1) 100%
 }
 .content-wrapper {
   display: grid;
-  width: 100vw;
+  width: 100%;
   gap: 5rem;
 }
 .rotated-box {
@@ -234,7 +232,7 @@ background: linear-gradient(28deg, rgba(99,107,224,1) 0%, rgba(0,188,255,1) 100%
   object-position: center;
 }
 .content-wrapper .right {
-  justify-content: space-between;
+  justify-content: space-evenly;
   gap: 1rem;
 }
 .content-wrapper .options {
@@ -345,6 +343,6 @@ background: linear-gradient(28deg, rgba(99,107,224,1) 0%, rgba(0,188,255,1) 100%
 }
 @media (min-width: 1024px) {
   .big-title{
-    font-size: 4.5rem;
+    font-size: 4rem;
   }
 }
