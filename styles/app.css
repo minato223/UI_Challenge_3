@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&display=swap');
 :root {
-  --rotated-box-width: 400px;
+  --rotated-box-width: 300px;
   --rotate: 0:
   --rotation-ratio: 90deg;
   --main-color: #D5B713;
@@ -201,6 +201,13 @@ background: linear-gradient(28deg, rgba(99,107,224,1) 0%, rgba(0,188,255,1) 100%
   opacity: 0;
   pointer-events: none;
 }
+.rotated-box .image-container .shadow{
+  position: absolute;
+      width: 80%;
+    height: 10px;
+    bottom: 2rem;
+    right: 2rem;
+}
 .rotated-box .image-container.active{
   opacity: 1;
   width: calc(var(--rotated-box-width)*1.2);
@@ -314,6 +321,10 @@ background: linear-gradient(28deg, rgba(99,107,224,1) 0%, rgba(0,188,255,1) 100%
   }
 }
 @media (min-width: 768px) {
+  body{
+    --rotated-box-width: 400px;
+  }
+
   .menu-wrapper {
     gap: 3rem;
   }
